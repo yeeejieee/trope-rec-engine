@@ -78,3 +78,53 @@ Built as part of NUS BT4221 (Big Data Techniques and Technologies).
 ---
 
 ## 🏗️ Pipeline Architecture
+Raw Kindle Data (982K rows)
+│
+▼
+Phase 1: PySpark Data Ingestion & Pruning
+→ Structural pruning
+→ K-Core bipartite filter (Item >50, User ≥10)
+→ Dense matrix (102K rows, 0.70% density)
+│
+▼
+Phase 2: Agentic Feature Engineering (LangGraph)
+→ Validator Node (LLM Gatekeeper)
+→ Extractor Node (Tropes + Genres via GPT-4o)
+→ Pydantic schema enforcement
+│
+▼
+Phase 3: Vectorisation (Spark ML)
+→ Genre CountVectorizer (596-D)
+→ Trope TF-IDF (512-D)
+→ Trope Word2Vec (512-D)
+→ Feature fusion (1,108-D)
+│
+▼
+Phase 4: Modelling & Autonomous Tuning
+→ Temporal train-test split (80/20 chronological)
+→ Hybrid Recommender (Content + CF + Pop Boost)
+→ LangGraph orchestrator auto-tunes weights
+→ Evaluation: Recall@K, NDCG@K
+
+---
+
+## 📊 Dataset
+
+**UCSD Amazon Kindle Store Reviews (5-core)**
+- 982,619 reviews across 9 columns
+- Spanning 1996–2014
+- 701.88MB raw size
+- Post-filtering: 102,784 interactions, 5,174 users, 2,836 books
+
+---
+
+## 👥 Team (NUS BT4221)
+
+| Name |
+|---|
+| Fan Ryan |
+| Shang Yi Qian |
+| Tay Kai |
+| Ong Yi Jie |
+| Dannon Lee Kang Wei |
+| Wang Ziheng |
