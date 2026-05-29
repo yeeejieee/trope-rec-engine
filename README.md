@@ -76,53 +76,34 @@ Built as part of NUS BT4221 (Big Data Techniques and Technologies).
 | Language | Python 3.x |
 
 ---
-
-## 🏗️ Pipeline Architecture
-Here's a clean ASCII version you can paste directly into your README:
-
-```
 ## 🏗️ Pipeline Architecture
 
-```
-┌─────────────────────────────────────────┐
-│         Raw Kindle Data (982K rows)     │
-└──────────────────┬──────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────┐
-│   Phase 1: Data Ingestion & Pruning     │
-│   ├── Structural pruning                │
-│   ├── K-Core filter (Item >50, User ≥10)│
-│   └── Dense matrix (102K rows, 0.70%)   │
-└──────────────────┬──────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────┐
-│   Phase 2: Agentic Feature Engineering  │
-│   ├── Validator Node (LLM Gatekeeper)   │
-│   ├── Extractor Node (GPT-4o)           │
-│   └── Pydantic schema enforcement       │
-└──────────────────┬──────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────┐
-│   Phase 3: Vectorisation (Spark ML)     │
-│   ├── Genre CountVectorizer  (596-D)    │
-│   ├── Trope TF-IDF           (512-D)    │
-│   ├── Trope Word2Vec         (512-D)    │
-│   └── Feature fusion        (1,108-D)   │
-└──────────────────┬──────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────┐
-│   Phase 4: Modelling & Auto-Tuning      │
-│   ├── Chronological split (80/20)       │
-│   ├── Hybrid Recommender (CF + Content) │
-│   ├── LangGraph auto-tunes weights      │
-│   └── Evaluation: Recall@K, NDCG@K     │
-└─────────────────────────────────────────┘
-```
+**Phase 1 — Data Ingestion & Pruning**
+- Structural pruning + K-Core filter (Item >50, User ≥10)
+- Output: 102K rows, 0.70% matrix density
 
+↓
+
+**Phase 2 — Agentic Feature Engineering (LangGraph)**
+- Validator Node filters non-narrative reviews
+- Extractor Node pulls tropes + genres via GPT-4o
+- Pydantic schema enforcement
+
+↓
+
+**Phase 3 — Vectorisation (Spark ML)**
+- Genre CountVectorizer → 596-D
+- Trope TF-IDF → 512-D
+- Trope Word2Vec → 512-D
+- Fused feature vector → 1,108-D
+
+↓
+
+**Phase 4 — Modelling & Auto-Tuning**
+- Chronological 80/20 train-test split
+- Hybrid Recommender (Content + CF + Popularity Boost)
+- LangGraph orchestrator auto-tunes weights
+- Evaluation: Recall@K, NDCG@K
 ---
 
 ## 📊 Dataset
@@ -135,7 +116,7 @@ Here's a clean ASCII version you can paste directly into your README:
 
 ---
 
-```md
+
 ## 🚀 Setup
 
 Requires Python 3.10+ and Java (for PySpark).
