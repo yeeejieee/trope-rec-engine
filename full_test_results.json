@@ -1,0 +1,820 @@
+{
+  "mainstream": {
+    "profile_name": "Emily Carter",
+    "edge_case": "This profile ensures that the system can effectively recommend popular items based on user preferences.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 12,
+      "n_catalogue_hits": 12,
+      "recommendations": [
+        "B00K9PHKPE",
+        "B00DRN5X72",
+        "B00HS6NJNO",
+        "B00HGX5ASQ",
+        "B00EBGBKN0",
+        "B00EB9Z902",
+        "B00BKTNDD6",
+        "B00B6JFKNG",
+        "B00BTN2DSY",
+        "B00CKWTFJ8",
+        "B00FURCF9C",
+        "B00GM4N3MU",
+        "B00K9O53UO",
+        "B00KHHOUKW",
+        "B00BZPJRQW",
+        "B00IH8IDVA",
+        "B00J0KYFSO",
+        "B00BCG1N16",
+        "B00IK5AGAQ",
+        "B00DY8HASK",
+        "B00ILWA6WG",
+        "B00J47HAUS",
+        "B00DNPQSPK",
+        "B00G8BHJB8",
+        "B00C9PED6G",
+        "B00EBEFDXA",
+        "B00EDDC0NK",
+        "B00BD2PT8M",
+        "B00I4ABC3W",
+        "B00GLOJ58W",
+        "B00GKKU0OK",
+        "B00J2G703I",
+        "B00FNUND4W",
+        "B00KOSOX2O",
+        "B00IPL4AR0",
+        "B00GB36DDI",
+        "B00JD223TW",
+        "B005YKC770",
+        "B00I2CPY4U",
+        "B00K5XAZ5W",
+        "B00GGRBCNU",
+        "B00C51HBJ0",
+        "B00GEHN4I8",
+        "B00HL2MGPM",
+        "B00KA0AGJK",
+        "B00BQMKC5O",
+        "B00HG15RHM",
+        "B00EO2X0OS",
+        "B00IJI2RH4",
+        "B00JIWJ78C"
+      ],
+      "avg_sim_top_k": 0.595,
+      "avg_sim_random": 0.4295,
+      "delta": 0.1655,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1599,
+      "metrics": {
+        "10": {
+          "recall": 0.3333,
+          "ndcg": 0.3183,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.5,
+          "ndcg": 0.389,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 0.8333,
+          "ndcg": 0.5468,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 12,
+      "n_positive": 12,
+      "n_negative": 0,
+      "pct_positive": 100.0,
+      "genre_diversity": 6,
+      "unique_genres": [
+        "Contemporary",
+        "Mystery",
+        "New Adult",
+        "Romance",
+        "Thriller",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 12
+    }
+  },
+  "niche": {
+    "profile_name": "Niche Reader",
+    "edge_case": "This profile tests the ability of the recommendation system to identify niche genres and themes.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 7,
+      "n_catalogue_hits": 7,
+      "recommendations": [
+        "B00GW9SOBK",
+        "B00B3KPBSW",
+        "B00EPZUSYY",
+        "B00I2CPY4U",
+        "B00H6DAPH2",
+        "B00CGTWC0O",
+        "B004WSQCS0",
+        "B00DU48LC2",
+        "B00EN7RZ4A",
+        "B00HXXE5Q2",
+        "B00CYKHQW4",
+        "B00FL5J4QU",
+        "B00HCMZZQ8",
+        "B00HP90OBE",
+        "B00BQYNNE4",
+        "B00DMTXGWU",
+        "B00FKAD59I",
+        "B00H95FQRG",
+        "B00G12XU1M",
+        "B00JCJAK96",
+        "B00FEPGGJ0",
+        "B0085BEENU",
+        "B00GDCXPWO",
+        "B00IA6QWP8",
+        "B00HGX5ASQ",
+        "B00HY03FJM",
+        "B004Z1GHG6",
+        "B00FGFY86G",
+        "B00GLOJ58W",
+        "B00EH9HUNA",
+        "B00I48KN16",
+        "B00H2WZZY0",
+        "B00DNPQSPK",
+        "B00EZ6239G",
+        "B00DG8ZYA4",
+        "B00I1WAG44",
+        "B00II4IHQ4",
+        "B00GLSBYYG",
+        "B00KHHOUKW",
+        "B00IJI2RH4",
+        "B0088GGSR2",
+        "B00J915BYG",
+        "B00K0OL35W",
+        "B00CX9K2FE",
+        "B00BTN2DSY",
+        "B00DP5AS7W",
+        "B00GOJZAII",
+        "B00G8BHJB8",
+        "B00JD223TW",
+        "B00HL2MGPM"
+      ],
+      "avg_sim_top_k": 0.631,
+      "avg_sim_random": 0.4067,
+      "delta": 0.2242,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1277,
+      "metrics": {
+        "10": {
+          "recall": 0.1429,
+          "ndcg": 0.1374,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.5714,
+          "ndcg": 0.3437,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 0.8571,
+          "ndcg": 0.4589,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 7,
+      "n_positive": 7,
+      "n_negative": 0,
+      "pct_positive": 100.0,
+      "genre_diversity": 4,
+      "unique_genres": [
+        "Contemporary",
+        "Literary Fiction",
+        "Romance",
+        "Western"
+      ],
+      "n_real_book_ids": 7
+    }
+  },
+  "diverse": {
+    "profile_name": "Alex Morgan",
+    "edge_case": "This user profile tests the system's ability to recommend coherent books across diverse genres.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 8,
+      "n_catalogue_hits": 8,
+      "recommendations": [
+        "B00IH8IDVA",
+        "B00GKKU0OK",
+        "B00IBHSZ4M",
+        "B00CO7GIDU",
+        "B00JD223TW",
+        "B00II4IHQ4",
+        "B00I3M5W6O",
+        "B00IQYYYJ0",
+        "B00HFF8JLA",
+        "B00KOSOX2O",
+        "B00EBRUB5C",
+        "B00GJEDKHQ",
+        "B00DRL96CC",
+        "B00GB36DDI",
+        "B00K4368KO",
+        "B00HGZE238",
+        "B00CX5V74I",
+        "B00KA0AGJK",
+        "B005FG163Y",
+        "B00F9EZCKU",
+        "B00AIBQ6P4",
+        "B00GN8K6CU",
+        "B00DG9L4B6",
+        "B00FAE7JT6",
+        "B00HGK8ZWM",
+        "B00CO7GIFI",
+        "B00FL5J4QU",
+        "B00K60M99E",
+        "B00JI34U0G",
+        "B00BOTU4JI",
+        "B00E7XUGM8",
+        "B00F6ELODW",
+        "B00B0645XG",
+        "B00BTN2DSY",
+        "B00CVCGYJQ",
+        "B00DXKHIIQ",
+        "B00D7Z4FW4",
+        "B00HFXK4W4",
+        "B00J47HAUS",
+        "B00HOSAE52",
+        "B00CUFIFMS",
+        "B00E3UDI8O",
+        "B00K8A9CCO",
+        "B00AMUZS3W",
+        "B00KF2SCWQ",
+        "B00FXYLY4O",
+        "B00HOKH5OS",
+        "B00K9QUXAC",
+        "B001HQHCBQ",
+        "B00J44T4YQ"
+      ],
+      "avg_sim_top_k": 0.6163,
+      "avg_sim_random": 0.3909,
+      "delta": 0.2254,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1491,
+      "metrics": {
+        "10": {
+          "recall": 0.875,
+          "ndcg": 0.9157,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 1.0,
+          "ndcg": 0.9776,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 1.0,
+          "ndcg": 0.9776,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 10,
+      "n_positive": 8,
+      "n_negative": 2,
+      "pct_positive": 80.0,
+      "genre_diversity": 10,
+      "unique_genres": [
+        "Contemporary",
+        "Fantasy",
+        "Historical Fiction",
+        "Horror",
+        "Literary Fiction",
+        "New Adult",
+        "Romance",
+        "Self-Help",
+        "Thriller",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 10
+    }
+  },
+  "negative": {
+    "profile_name": "Alex Carter",
+    "edge_case": "This profile tests the system's ability to handle users with sparse positive ratings effectively.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 2,
+      "n_catalogue_hits": 2,
+      "recommendations": [
+        "B00DRN5X72",
+        "B00FIROTZ2",
+        "B00HGX5ASQ",
+        "B00EBGBKN0",
+        "B00BKTNDD6",
+        "B00C44PW5I",
+        "B00D4V1X94",
+        "B00GA644CI",
+        "B00BTN2DSY",
+        "B00CKWTFJ8",
+        "B00KCE1ISM",
+        "B00DY8HASK",
+        "B00CDVZFRW",
+        "B00IA6QWP8",
+        "B00GLOJ58W",
+        "B00K5XAZ5W",
+        "B00DSDPTTI",
+        "B00EMXC022",
+        "B00IODNJRG",
+        "B00B6JFKNG",
+        "B00DNPQSPK",
+        "B00I2CPY4U",
+        "B00GLSBYYG",
+        "B009YLFHXG",
+        "B00C2YRAQE",
+        "B00J4RDTEY",
+        "B00IK5AGAQ",
+        "B00FKERXXS",
+        "B00FVIXS5K",
+        "B00BSB5B2M",
+        "B00C9PED6G",
+        "B00FIVYEUI",
+        "B004Z1GHG6",
+        "B00H95FQRG",
+        "B0092ML9AC",
+        "B00K9QUXAC",
+        "B00HY03FJM",
+        "B00KBA6PKS",
+        "B00CD36FKQ",
+        "B00E2QS6SG",
+        "B00FA2B9S0",
+        "B00C53PC7Q",
+        "B00HGI16I4",
+        "B006R6JVH4",
+        "B00JMF2RPU",
+        "B00C4BA44K",
+        "B00ET28R8W",
+        "B00F6ELODW",
+        "B00CLECQ28",
+        "B00DXOT35I"
+      ],
+      "avg_sim_top_k": 0.6311,
+      "avg_sim_random": 0.3483,
+      "delta": 0.2828,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1532,
+      "metrics": {
+        "10": {
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.5,
+          "ndcg": 0.147,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 1.0,
+          "ndcg": 0.2826,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 10,
+      "n_positive": 2,
+      "n_negative": 8,
+      "pct_positive": 20.0,
+      "genre_diversity": 8,
+      "unique_genres": [
+        "Adventure",
+        "Contemporary",
+        "Fantasy",
+        "Literary Fiction",
+        "Mystery",
+        "Romance",
+        "Thriller",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 10
+    }
+  },
+  "cold": {
+    "profile_name": "Alice Smith",
+    "edge_case": "This profile tests the system's ability to recommend for users with minimal reading history.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 4,
+      "n_catalogue_hits": 4,
+      "recommendations": [
+        "B00DRN5X72",
+        "B00EBGBKN0",
+        "B00BKTNDD6",
+        "B00CKWTFJ8",
+        "B00FIROTZ2",
+        "B00GLOJ58W",
+        "B00C44PW5I",
+        "B00D4V1X94",
+        "B00GA644CI",
+        "B00DY8HASK",
+        "B00CDVZFRW",
+        "B00EMXC022",
+        "B00IODNJRG",
+        "B00FIVYEUI",
+        "B0092ML9AC",
+        "B00K5XAZ5W",
+        "B00H95FQRG",
+        "B00IA6QWP8",
+        "B00C2YRAQE",
+        "B00KCE1ISM",
+        "B00BTN2DSY",
+        "B00FKERXXS",
+        "B00BSB5B2M",
+        "B00FVIXS5K",
+        "B00HGI16I4",
+        "B00F6ELODW",
+        "B00IH487I8",
+        "B00JJZLJRU",
+        "B006R6JVH4",
+        "B00CLECQ28",
+        "B00DSDPTTI",
+        "B00B09RYJK",
+        "B00I2CPY4U",
+        "B00DRERCRA",
+        "B00DYURN08",
+        "B00BHLGZJ6",
+        "B00BH68UCG",
+        "B00C53PC7Q",
+        "B00GLSBYYG",
+        "B00BFMDOPA",
+        "B00DNPQSPK",
+        "B00HAOB9ZE",
+        "B005PP3DVS",
+        "B00CKURM1I",
+        "B00J4XQSFK",
+        "B00FMHPXFS",
+        "B00J4RDTEY",
+        "B00DXOT35I",
+        "B00FIWMEU4",
+        "B00CUFIFMS"
+      ],
+      "avg_sim_top_k": 0.6097,
+      "avg_sim_random": 0.3885,
+      "delta": 0.2211,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1218,
+      "metrics": {
+        "10": {
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 0.25,
+          "ndcg": 0.0695,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 5,
+      "n_positive": 4,
+      "n_negative": 1,
+      "pct_positive": 80.0,
+      "genre_diversity": 7,
+      "unique_genres": [
+        "Adventure",
+        "Contemporary",
+        "Fantasy",
+        "Mystery",
+        "Romance",
+        "Thriller",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 5
+    }
+  },
+  "poweruser": {
+    "profile_name": "Epic Reader",
+    "edge_case": "This power reviewer profile tests whether the pipeline can handle highly consistent tastes across many fantasy and adventure books.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 15,
+      "n_catalogue_hits": 15,
+      "recommendations": [
+        "B00DRN5X72",
+        "B00EBGBKN0",
+        "B00BKTNDD6",
+        "B00CKWTFJ8",
+        "B00IPL4AR0",
+        "B00IH8IDVA",
+        "B00CZEIQMI",
+        "B00IA6QWP8",
+        "B00GLOJ58W",
+        "B00K5XAZ5W",
+        "B00FZ2EU5E",
+        "B00D4V1X94",
+        "B00CO7GIDU",
+        "B00JD223TW",
+        "B00II4IHQ4",
+        "B00KCE1ISM",
+        "B00BTN2DSY",
+        "B00FIROTZ2",
+        "B00I3M5W6O",
+        "B00BFMDOPA",
+        "B00I7X5ML4",
+        "B00DY8HASK",
+        "B00IQYYYJ0",
+        "B00HFF8JLA",
+        "B00G2BL50K",
+        "B00DSDPTTI",
+        "B00CDVZFRW",
+        "B00DNPQSPK",
+        "B00KOSOX2O",
+        "B00EBRUB5C",
+        "B00GJEDKHQ",
+        "B00GXDQKZW",
+        "B00GKKU0OK",
+        "B00GVZZQ2A",
+        "B00IBHSZ4M",
+        "B00J4RDTEY",
+        "B00EB4LMV2",
+        "B00EMXC022",
+        "B00GLSBYYG",
+        "B00BSXNZFU",
+        "B00KA0AGJK",
+        "B00AMUZS3W",
+        "B00HGZE238",
+        "B00GN8K6CU",
+        "B00CX5V74I",
+        "B0092ML9AC",
+        "B00GA644CI",
+        "B00I1OJRV0",
+        "B00FZVC26E",
+        "B00HOKH5OS"
+      ],
+      "avg_sim_top_k": 0.6665,
+      "avg_sim_random": 0.4437,
+      "delta": 0.2228,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1853,
+      "metrics": {
+        "10": {
+          "recall": 0.2667,
+          "ndcg": 0.5424,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.5333,
+          "ndcg": 0.5938,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 0.8667,
+          "ndcg": 0.7766,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 15,
+      "n_positive": 15,
+      "n_negative": 0,
+      "pct_positive": 100.0,
+      "genre_diversity": 4,
+      "unique_genres": [
+        "Adventure",
+        "Fantasy",
+        "Romance",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 15
+    }
+  },
+  "trope": {
+    "profile_name": "Tara Lovegood",
+    "edge_case": "This profile tests the system's ability to accurately filter for the specific enemies-to-lovers trope amidst broader romance narratives.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 8,
+      "n_catalogue_hits": 8,
+      "recommendations": [
+        "B00IA6QWP8",
+        "B00KCE1ISM",
+        "B00EB9Z902",
+        "B00GJEDKHQ",
+        "B00KA0AGJK",
+        "B00BTN2DSY",
+        "B00GKKU0OK",
+        "B00FGFY86G",
+        "B00HGX5ASQ",
+        "B00GB36DDI",
+        "B00FAE7JT6",
+        "B00DFNI2S6",
+        "B00J0KYFSO",
+        "B00DY8HASK",
+        "B00EDDC0NK",
+        "B006R6JVH4",
+        "B00JI34U0G",
+        "B00HY03FJM",
+        "B00GLSBYYG",
+        "B00IH8IDVA",
+        "B00KOSOX2O",
+        "B00J47HAUS",
+        "B00GF6BVXI",
+        "B00JD223TW",
+        "B00I3M5W6O",
+        "B00H95FQRG",
+        "B00IRNT56M",
+        "B004Z1GHG6",
+        "B00G2BL50K",
+        "B00II4IHQ4",
+        "B00HT73RHK",
+        "B009V7GHR8",
+        "B00JUCHUMK",
+        "B00K5XAZ5W",
+        "B00FAFJU8S",
+        "B00IBHSZ4M",
+        "B00I2CPY4U",
+        "B00CD36FKQ",
+        "B00DE50M2E",
+        "B00HOSAE52",
+        "B00E7824EQ",
+        "B00KHHOUKW",
+        "B00J915BYG",
+        "B00BTIDW4S",
+        "B00CO7GIDU",
+        "B00E3UDI8O",
+        "B00D9F4MDE",
+        "B00DRL96CC",
+        "B00JIWJ78C",
+        "B005YKC770"
+      ],
+      "avg_sim_top_k": 0.5755,
+      "avg_sim_random": 0.3967,
+      "delta": 0.1788,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1395,
+      "metrics": {
+        "10": {
+          "recall": 0.125,
+          "ndcg": 0.2529,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.5,
+          "ndcg": 0.451,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 1.0,
+          "ndcg": 0.6574,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 8,
+      "n_positive": 8,
+      "n_negative": 0,
+      "pct_positive": 100.0,
+      "genre_diversity": 5,
+      "unique_genres": [
+        "Contemporary",
+        "New Adult",
+        "Romance",
+        "Thriller",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 8
+    }
+  },
+  "mixed": {
+    "profile_name": "Alex Morgan",
+    "edge_case": "This archetype tests how contradictory ratings within the same genre impact collaborative filtering recommendations.",
+    "cbf": {
+      "status": "ok",
+      "n_positive_books": 5,
+      "n_catalogue_hits": 5,
+      "recommendations": [
+        "B00EB9Z902",
+        "B00KOSOX2O",
+        "B00K5XAZ5W",
+        "B00J47HAUS",
+        "B00HGX5ASQ",
+        "B00BTN2DSY",
+        "B004Z1GHG6",
+        "B00IH8IDVA",
+        "B00KHHOUKW",
+        "B00K9QUXAC",
+        "B00J0KYFSO",
+        "B00DY8HASK",
+        "B00G8BHJB8",
+        "B00ILWA6WG",
+        "B005YKC770",
+        "B00EDDC0NK",
+        "B00I4ABC3W",
+        "B00GKKU0OK",
+        "B00GB36DDI",
+        "B00JD223TW",
+        "B00JCJAK96",
+        "B006XZ2FC2",
+        "B00IBHSZ4M",
+        "B00JIWJ78C",
+        "B00EUBGT7I",
+        "B00DRL96CC",
+        "B00IRNT56M",
+        "B007RZBM0I",
+        "B009V7GHR8",
+        "B00EXTVSHI",
+        "B00HGI16I4",
+        "B00GM4N3MU",
+        "B00CUFIFMS",
+        "B00FZVC26E",
+        "B006GEPVQM",
+        "B00D9F4MDE",
+        "B00HFXK4W4",
+        "B00F6ELODW",
+        "B00DRERCRA",
+        "B006R6JVH4",
+        "B00G8PFI08",
+        "B00D5YWZFQ",
+        "B00EO2X0OS",
+        "B00GN8K6CU",
+        "B00HGTI24Y",
+        "B00IPL4AR0",
+        "B00HARTVRY",
+        "B00FGFYIS4",
+        "B004S81POK",
+        "B00BOTU4JI"
+      ],
+      "avg_sim_top_k": 0.5649,
+      "avg_sim_random": 0.3689,
+      "delta": 0.196,
+      "model": "Item-to-Item + Popularity Boost"
+    },
+    "cf_hybrid": {
+      "status": "ok",
+      "n_candidates": 1638,
+      "metrics": {
+        "10": {
+          "recall": 0.2,
+          "ndcg": 0.098,
+          "note": "ok"
+        },
+        "20": {
+          "recall": 0.4,
+          "ndcg": 0.1926,
+          "note": "ok"
+        },
+        "50": {
+          "recall": 0.8,
+          "ndcg": 0.3296,
+          "note": "ok"
+        }
+      }
+    },
+    "diagnostics": {
+      "n_interactions": 10,
+      "n_positive": 5,
+      "n_negative": 5,
+      "pct_positive": 50.0,
+      "genre_diversity": 6,
+      "unique_genres": [
+        "Contemporary",
+        "Horror",
+        "Mystery",
+        "Romance",
+        "Thriller",
+        "Young Adult"
+      ],
+      "n_real_book_ids": 10
+    }
+  }
+}

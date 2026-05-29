@@ -1,0 +1,879 @@
+{
+  "mainstream": {
+    "reviewerID": "TEST_MAINSTREAM_001",
+    "name": "Emily Carter",
+    "persona": "Mainstream reader",
+    "activity_level": "high",
+    "reading_history": [
+      {
+        "bookID": "B00FO1C8OG",
+        "title": "Secrets in the Shadows",
+        "overall": 4.5,
+        "genres": [
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A captivating investigation revealing dark truths within a secretive organization."
+      },
+      {
+        "bookID": "B005HH1HVM",
+        "title": "Love's Complicated Ties",
+        "overall": 4.8,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "Character-driven romance with strong interpersonal relationships."
+      },
+      {
+        "bookID": "B00A2B8M98",
+        "title": "Small Town Secrets",
+        "overall": 4.2,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "Small town romance with a miscommunication twist."
+      },
+      {
+        "bookID": "B00G8U2O0U",
+        "title": "Biker's Heart",
+        "overall": 4.6,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Contemporary"
+        ],
+        "trope": "A gritty romance involving bikers, violence, and steamy encounters."
+      },
+      {
+        "bookID": "B00IVSF77Y",
+        "title": "Secrets of the Past",
+        "overall": 4.4,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Young Adult"
+        ],
+        "trope": "Second chance romance involving secrets and betrayal."
+      },
+      {
+        "bookID": "B00JCYNMUU",
+        "title": "From Friends to Lovers",
+        "overall": 4.7,
+        "genres": [
+          "Romance",
+          "Contemporary",
+          "New Adult"
+        ],
+        "trope": "Friends to lovers with a single mother storyline."
+      },
+      {
+        "bookID": "B00HOSAE52",
+        "title": "Through the Fire",
+        "overall": 4.5,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Young Adult"
+        ],
+        "trope": "An intense emotional journey through love and personal growth."
+      },
+      {
+        "bookID": "B00CQQW1ZI",
+        "title": "Tangled Hearts",
+        "overall": 4.3,
+        "genres": [
+          "Romance",
+          "Contemporary",
+          "Young Adult"
+        ],
+        "trope": "A love triangle complicates relationships and decisions."
+      },
+      {
+        "bookID": "B00GKBIRVM",
+        "title": "Love in the Midst of Chaos",
+        "overall": 4.9,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "Love prevails amidst chaos and danger."
+      },
+      {
+        "bookID": "B00BMU99HM",
+        "title": "Charming Neighbors",
+        "overall": 4.1,
+        "genres": [
+          "Romance"
+        ],
+        "trope": "A sweet love story with charming characters."
+      },
+      {
+        "bookID": "B00EMXC022",
+        "title": "Healing Love",
+        "overall": 4.4,
+        "genres": [
+          "Romance",
+          "Young Adult",
+          "Contemporary"
+        ],
+        "trope": "An intense, emotional love story between two characters overcoming their pasts."
+      },
+      {
+        "bookID": "B00C51HBJ0",
+        "title": "Dangerous Liaisons",
+        "overall": 4.3,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A suspenseful romance where two protagonists with troubled pasts navigate their lives."
+      }
+    ],
+    "dominant_taste": "Romance and Thriller",
+    "expected_recommendations": "Books that are popular in the romance and thriller genres.",
+    "edge_case_tested": "This profile ensures that the system can effectively recommend popular items based on user preferences."
+  },
+  "niche": {
+    "reviewerID": "TEST_NICHE_001",
+    "name": "Niche Reader",
+    "persona": "A discerning reader with a preference for obscure subgenres.",
+    "activity_level": "low",
+    "reading_history": [
+      {
+        "bookID": "B00ATTA70A",
+        "title": "The Quiet Reflection",
+        "overall": 4.5,
+        "genres": [
+          "Literary Fiction"
+        ],
+        "trope": "A minimalistic exploration of life and relationships that resonated deeply."
+      },
+      {
+        "bookID": "B00H5R8QQ6",
+        "title": "Interconnected Stories",
+        "overall": 4.2,
+        "genres": [
+          "Literary Fiction"
+        ],
+        "trope": "A deep exploration of character-driven narratives across interconnected stories."
+      },
+      {
+        "bookID": "B00A9H95JQ",
+        "title": "The Cast of Us",
+        "overall": 4.7,
+        "genres": [
+          "Literary Fiction",
+          "Contemporary"
+        ],
+        "trope": "Ensemble cast with strong character relationships that captivated my interest."
+      },
+      {
+        "bookID": "B0081NXWGM",
+        "title": "Cowboy's Heart",
+        "overall": 4.4,
+        "genres": [
+          "Romance",
+          "Western"
+        ],
+        "trope": "Falling for a charming cowboy with an intriguing backstory that I appreciated."
+      },
+      {
+        "bookID": "B00H7IEPXG",
+        "title": "Diverse Human Experiences",
+        "overall": 4.6,
+        "genres": [
+          "Literary Fiction",
+          "Contemporary"
+        ],
+        "trope": "A relatable exploration of the human experience through diverse characters."
+      },
+      {
+        "bookID": "B00G757PB4",
+        "title": "Growth Through Love",
+        "overall": 4.5,
+        "genres": [
+          "Romance",
+          "Contemporary",
+          "Literary Fiction"
+        ],
+        "trope": "A complex love story exploring personal growth and redemption through deep characters."
+      },
+      {
+        "bookID": "B00IODNJRG",
+        "title": "Emotional Connections",
+        "overall": 4.3,
+        "genres": [
+          "Literary Fiction",
+          "Contemporary"
+        ],
+        "trope": "A heartfelt exploration of human emotions and connections that struck a chord."
+      }
+    ],
+    "dominant_taste": "Literary Fiction with a blend of Romance and Western elements.",
+    "expected_recommendations": "Books that reflect deep emotional narratives and unique character developments.",
+    "edge_case_tested": "This profile tests the ability of the recommendation system to identify niche genres and themes."
+  },
+  "diverse": {
+    "reviewerID": "TEST_DIVERSE_001",
+    "name": "Alex Morgan",
+    "persona": "Eclectic reader",
+    "activity_level": "medium",
+    "reading_history": [
+      {
+        "bookID": "B00KU7OLXA",
+        "title": "The Path to Personal Growth",
+        "overall": 4.5,
+        "genres": [
+          "Self-Help"
+        ],
+        "trope": "This book provided practical tips that genuinely inspired me to improve."
+      },
+      {
+        "bookID": "B00AXDNVHS",
+        "title": "The Haunted Journey",
+        "overall": 4.0,
+        "genres": [
+          "Horror",
+          "Contemporary",
+          "Thriller"
+        ],
+        "trope": "The psychological depth of the characters kept me on the edge of my seat."
+      },
+      {
+        "bookID": "B00BMU99HM",
+        "title": "Sweet Love",
+        "overall": 4.8,
+        "genres": [
+          "Romance"
+        ],
+        "trope": "The charming characters and their delightful interactions made this a joy to read."
+      },
+      {
+        "bookID": "B008JI9EHU",
+        "title": "Hearts Unbound",
+        "overall": 4.7,
+        "genres": [
+          "Romance",
+          "Literary Fiction"
+        ],
+        "trope": "A deeply relatable story that resonated with my own experiences of love."
+      },
+      {
+        "bookID": "B008VHD6AU",
+        "title": "Surviving the Shadows",
+        "overall": 3.5,
+        "genres": [
+          "Horror",
+          "Contemporary",
+          "Thriller"
+        ],
+        "trope": "While the premise was intriguing, the execution felt lacking in depth."
+      },
+      {
+        "bookID": "B00D6SCXY4",
+        "title": "Love in the American West",
+        "overall": 4.3,
+        "genres": [
+          "Romance",
+          "Historical Fiction"
+        ],
+        "trope": "The historical backdrop enriched the romantic narrative beautifully."
+      },
+      {
+        "bookID": "B00CQQW1ZI",
+        "title": "Complicated Affairs",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Contemporary",
+          "Young Adult"
+        ],
+        "trope": "The love triangle created emotional stakes that were incredibly engaging."
+      },
+      {
+        "bookID": "B006LSTJGQ",
+        "title": "Quick Encounters",
+        "overall": 3.0,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "The story felt rushed and didn't fully develop the characters."
+      },
+      {
+        "bookID": "B00G8BHJB8",
+        "title": "Healing Hearts",
+        "overall": 4.2,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "New Adult"
+        ],
+        "trope": "The emotional journey of the characters resonated deeply with me."
+      },
+      {
+        "bookID": "B009TWA1RM",
+        "title": "A Quest for Love",
+        "overall": 4.6,
+        "genres": [
+          "Fantasy",
+          "Romance",
+          "Young Adult"
+        ],
+        "trope": "The blend of magic and romance was captivating and well-crafted."
+      }
+    ],
+    "dominant_taste": "Diverse interests across multiple genres including Romance and Horror.",
+    "expected_recommendations": "Books that mix emotional depth with thrilling narratives and character growth are preferred.",
+    "edge_case_tested": "This user profile tests the system's ability to recommend coherent books across diverse genres."
+  },
+  "negative": {
+    "reviewerID": "TEST_NEGATIVE_001",
+    "name": "Alex Carter",
+    "persona": "Negative rater",
+    "activity_level": "medium",
+    "reading_history": [
+      {
+        "bookID": "B00IZM5MDK",
+        "title": "Young Hearts in a Challenging World",
+        "overall": 3.0,
+        "genres": [
+          "Contemporary",
+          "Young Adult"
+        ],
+        "trope": "A light-hearted story about young love amidst personal and social challenges."
+      },
+      {
+        "bookID": "B00AST1XJU",
+        "title": "Unraveled Secrets",
+        "overall": 2.5,
+        "genres": [
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A character's true nature is revealed over time, leading to unexpected twists."
+      },
+      {
+        "bookID": "B005HH1HVM",
+        "title": "Connection Through Chaos",
+        "overall": 1.0,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "Character-driven romance with strong interpersonal relationships that fell flat."
+      },
+      {
+        "bookID": "B00A2B8M98",
+        "title": "Miscommunication in Love",
+        "overall": 2.0,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "Small town romance with a miscommunication twist that felt overly contrived."
+      },
+      {
+        "bookID": "B00HGX5ASQ",
+        "title": "A Journey Beyond Imagination",
+        "overall": 4.5,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "An immersive journey in a fantastical world that captivated my imagination."
+      },
+      {
+        "bookID": "B00ATTA70A",
+        "title": "Life's Minimalistic Truths",
+        "overall": 3.0,
+        "genres": [
+          "Literary Fiction"
+        ],
+        "trope": "A minimalistic exploration of life and relationships that lacked depth."
+      },
+      {
+        "bookID": "B00GKBIRVM",
+        "title": "Love in the Midst of Danger",
+        "overall": 1.5,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "Love prevails amidst chaos and danger, but everything felt forced."
+      },
+      {
+        "bookID": "B00EMXC022",
+        "title": "Overcoming Shadows",
+        "overall": 4.0,
+        "genres": [
+          "Romance",
+          "Young Adult",
+          "Contemporary"
+        ],
+        "trope": "An intense, emotional love story between two characters overcoming their pasts."
+      },
+      {
+        "bookID": "B00JWET7TU",
+        "title": "Mysteries of the Heart",
+        "overall": 2.0,
+        "genres": [
+          "Romance",
+          "Mystery"
+        ],
+        "trope": "A steamy romance with an intriguing mystery intertwined that failed to engage."
+      },
+      {
+        "bookID": "B00C51HBJ0",
+        "title": "Secrets of the Past",
+        "overall": 1.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A suspenseful romance where two protagonists with troubled pasts navigate their flaws."
+      }
+    ],
+    "dominant_taste": "Contemporary Romance with a tendency for critical reviews.",
+    "expected_recommendations": "Books with strong character development and emotional depth.",
+    "edge_case_tested": "This profile tests the system's ability to handle users with sparse positive ratings effectively."
+  },
+  "cold": {
+    "reviewerID": "TEST_COLD_001",
+    "name": "Alice Smith",
+    "persona": "Cold-start user exploring various genres but still unsure of preferences.",
+    "activity_level": "low",
+    "reading_history": [
+      {
+        "bookID": "B00IZM5MDK",
+        "title": "Young Love in a Big World",
+        "overall": 4.5,
+        "genres": [
+          "Contemporary",
+          "Young Adult"
+        ],
+        "trope": "A light-hearted story about young love amidst personal and social challenges."
+      },
+      {
+        "bookID": "B00AST1XJU",
+        "title": "The Truth Uncovered",
+        "overall": 4.2,
+        "genres": [
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A character's true nature is revealed over time, leading to unexpected twists in."
+      },
+      {
+        "bookID": "B00HGX5ASQ",
+        "title": "Journey to the Unknown",
+        "overall": 4.8,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "An immersive journey in a fantastical world."
+      },
+      {
+        "bookID": "B005HH1HVM",
+        "title": "Hearts Entwined",
+        "overall": 4.0,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "Character-driven romance with strong interpersonal relationships."
+      },
+      {
+        "bookID": "B00A2B8M98",
+        "title": "Miscommunication in Love",
+        "overall": 3.5,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "Small town romance with a miscommunication twist."
+      }
+    ],
+    "dominant_taste": "Contemporary and Romantic themes with elements of adventure and mystery.",
+    "expected_recommendations": "Books with strong character development and engaging narratives in contemporary or romantic genres.",
+    "edge_case_tested": "This profile tests the system's ability to recommend for users with minimal reading history."
+  },
+  "poweruser": {
+    "reviewerID": "TEST_POWERUSER_001",
+    "name": "Epic Reader",
+    "persona": "Power reviewer",
+    "activity_level": "high",
+    "reading_history": [
+      {
+        "bookID": "B00HGX5ASQ",
+        "title": "The Enchanted Forest",
+        "overall": 4.5,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "An immersive journey in a fantastical world that captivated my imagination."
+      },
+      {
+        "bookID": "B005CO2R46",
+        "title": "Twists of Fate",
+        "overall": 5.0,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "An epic journey filled with unexpected twists and intense climactic moments."
+      },
+      {
+        "bookID": "B0035LDNV4",
+        "title": "Heroine's Ascent",
+        "overall": 4.2,
+        "genres": [
+          "Fantasy",
+          "Young Adult"
+        ],
+        "trope": "A young heroine transforms from naivety to strength through adversity."
+      },
+      {
+        "bookID": "B00DP5AS7W",
+        "title": "Love's Labyrinth",
+        "overall": 4.8,
+        "genres": [
+          "Fantasy",
+          "Romance",
+          "Adventure"
+        ],
+        "trope": "A strong female lead caught in a tumultuous love triangle with unexpected cliffhangers."
+      },
+      {
+        "bookID": "B009LVWN40",
+        "title": "Bond of Secrets",
+        "overall": 4.6,
+        "genres": [
+          "Fantasy",
+          "Romance"
+        ],
+        "trope": "A woman escapes an abusive relationship only to find an unexpected bond with a stranger."
+      },
+      {
+        "bookID": "B00AA5CKPI",
+        "title": "Veil of Shadows",
+        "overall": 4.4,
+        "genres": [
+          "Fantasy",
+          "Romance"
+        ],
+        "trope": "A passionate love story set against a backdrop of supernatural conflicts."
+      },
+      {
+        "bookID": "B00CD7QO5S",
+        "title": "The Mystic Quest",
+        "overall": 4.7,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "A thrilling journey through a magical world with diverse characters and engaging storylines."
+      },
+      {
+        "bookID": "B00I2VUKKY",
+        "title": "Fate's Call",
+        "overall": 4.3,
+        "genres": [
+          "Fantasy"
+        ],
+        "trope": "A character embarks on a journey that sets the stage for a larger adventure ahead."
+      },
+      {
+        "bookID": "B00G8BHJB8",
+        "title": "Champions of Valor",
+        "overall": 4.5,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "A captivating journey through a mythical land filled with intrigue and wonder."
+      },
+      {
+        "bookID": "B00F70LNO0",
+        "title": "Chronicles of the Lost",
+        "overall": 4.9,
+        "genres": [
+          "Fantasy",
+          "Adventure"
+        ],
+        "trope": "An unfinished story with unresolved cliffhanger that keeps me yearning for more."
+      },
+      {
+        "bookID": "B009NWRCPW",
+        "title": "Magic Awakened",
+        "overall": 4.1,
+        "genres": [
+          "Fantasy",
+          "Young Adult"
+        ],
+        "trope": "A young protagonist navigates friendships and conflicts in a magical world beautifully."
+      },
+      {
+        "bookID": "B00AY4OHHO",
+        "title": "Whispers of the Past",
+        "overall": 4.4,
+        "genres": [
+          "Fantasy",
+          "Young Adult"
+        ],
+        "trope": "A journey of self-discovery abruptly cut short left me wanting more exploration."
+      },
+      {
+        "bookID": "B00H1AIHIO",
+        "title": "Echoes of Eternity",
+        "overall": 4.6,
+        "genres": [
+          "Fantasy",
+          "Young Adult"
+        ],
+        "trope": "A thrilling romance that captivates from the start with its engaging narrative."
+      },
+      {
+        "bookID": "B00EP6LI92",
+        "title": "The Redemption Arc",
+        "overall": 4.2,
+        "genres": [
+          "Fantasy"
+        ],
+        "trope": "A quest for redemption leads to unexpected alliances that kept the story gripping."
+      },
+      {
+        "bookID": "B00K5XAZ5W",
+        "title": "A Dance of Fates",
+        "overall": 4.3,
+        "genres": [
+          "Fantasy",
+          "Romance"
+        ],
+        "trope": "A character is drawn into a magical world and finds unexpected love amidst chaos."
+      }
+    ],
+    "dominant_taste": "Fantasy and Adventure",
+    "expected_recommendations": "Books that combine rich world-building, strong character development, and thrilling adventures.",
+    "edge_case_tested": "This power reviewer profile tests whether the pipeline can handle highly consistent tastes across many fantasy and adventure books."
+  },
+  "trope": {
+    "reviewerID": "TEST_TROPE_001",
+    "name": "Tara Lovegood",
+    "persona": "Trope-specific reader",
+    "activity_level": "high",
+    "reading_history": [
+      {
+        "bookID": "B00CGFGS3A",
+        "title": "The Rival's Redemption",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Contemporary"
+        ],
+        "trope": "An enemies-to-lovers story where two rivals discover unexpected passion through heated confrontations and witty banter."
+      },
+      {
+        "bookID": "B00FIL6S7U",
+        "title": "Pride's Enmity",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Contemporary",
+          "Young Adult"
+        ],
+        "trope": "An enemies to lovers adaptation of Pride and Prejudice, filled with sharp dialogue and evolving relationships."
+      },
+      {
+        "bookID": "B00G8BHJB8",
+        "title": "Fighting the Flames",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "New Adult"
+        ],
+        "trope": "Two rival firefighters find themselves battling their attraction amidst dangerous fires and heated arguments."
+      },
+      {
+        "bookID": "B00FPQCY4E",
+        "title": "Unlikely Affections",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Young Adult"
+        ],
+        "trope": "A romance between two flawed individuals brought together by unexpected circumstances and their constant bickering."
+      },
+      {
+        "bookID": "B00K7J7ACA",
+        "title": "Tangled Hearts",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "New Adult",
+          "Contemporary"
+        ],
+        "trope": "Two people with emotional baggage find healing and love through honest communication after years of rivalry."
+      },
+      {
+        "bookID": "B00H3RUY8G",
+        "title": "Beneath the Surface",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Young Adult"
+        ],
+        "trope": "An intense emotional journey as two rivals uncover their feelings while navigating dangerous situations."
+      },
+      {
+        "bookID": "B00HOSAE52",
+        "title": "Complicated Love",
+        "overall": 5.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Young Adult"
+        ],
+        "trope": "An intense emotional journey through rivalry and personal growth between two characters who can't stand each other."
+      },
+      {
+        "bookID": "B00BMU99HM",
+        "title": "Rivals in Love",
+        "overall": 5.0,
+        "genres": [
+          "Romance"
+        ],
+        "trope": "A sweet love story where two enemies slowly realize their connection through humorous misunderstandings."
+      }
+    ],
+    "dominant_taste": "Enemies-to-lovers romance",
+    "expected_recommendations": "Books that focus on the enemies-to-lovers trope with depth and emotional complexity.",
+    "edge_case_tested": "This profile tests the system's ability to accurately filter for the specific enemies-to-lovers trope amidst broader romance narratives."
+  },
+  "mixed": {
+    "reviewerID": "TEST_MIXED_001",
+    "name": "Alex Morgan",
+    "persona": "Mixed signal user who loves thrillers but rates them inconsistently.",
+    "activity_level": "medium",
+    "reading_history": [
+      {
+        "bookID": "B00AST1XJU",
+        "title": "Twisted Secrets",
+        "overall": 5.0,
+        "genres": [
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A character's true nature is revealed over time, leading to unexpected twists in the narrative that kept me hooked."
+      },
+      {
+        "bookID": "B00FO1C8OG",
+        "title": "Dark Shadows",
+        "overall": 1.0,
+        "genres": [
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A captivating investigation revealing dark truths within a secretive organization that ultimately disappointed me."
+      },
+      {
+        "bookID": "B00I7JJQZG",
+        "title": "Deceptive Lies",
+        "overall": 4.0,
+        "genres": [
+          "Thriller"
+        ],
+        "trope": "A tale of deception and unexpected twists that kept my heart racing until the very end."
+      },
+      {
+        "bookID": "B00HOSAE52",
+        "title": "Love in the Shadows",
+        "overall": 4.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Young Adult"
+        ],
+        "trope": "An intense emotional journey through love and personal growth that resonated deeply with me."
+      },
+      {
+        "bookID": "B00GKBIRVM",
+        "title": "Amidst the Chaos",
+        "overall": 3.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "Love prevails amidst chaos and danger, but the pacing felt uneven and detracted from my enjoyment."
+      },
+      {
+        "bookID": "B00BWY3UKU",
+        "title": "Whodunit?",
+        "overall": 5.0,
+        "genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "trope": "A suspenseful whodunit where the reader is kept guessing until the end, which I loved."
+      },
+      {
+        "bookID": "B00G8U2O0U",
+        "title": "Dangerous Liaisons",
+        "overall": 2.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Contemporary"
+        ],
+        "trope": "A gritty romance involving bikers, violence, and steamy encounters that felt too clich\u00e9."
+      },
+      {
+        "bookID": "B00C51HBJ0",
+        "title": "Secrets and Lies",
+        "overall": 4.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Mystery"
+        ],
+        "trope": "A suspenseful romance where two protagonists with troubled pasts navigate their complicated feelings beautifully."
+      },
+      {
+        "bookID": "B00AXDNVHS",
+        "title": "Survival Instincts",
+        "overall": 1.0,
+        "genres": [
+          "Horror",
+          "Contemporary",
+          "Thriller"
+        ],
+        "trope": "A dark journey of character transformation and emotional struggle that I found to be unconvincing."
+      },
+      {
+        "bookID": "B00I4ABC3W",
+        "title": "Thrills and Chills",
+        "overall": 3.0,
+        "genres": [
+          "Romance",
+          "Thriller",
+          "Young Adult"
+        ],
+        "trope": "A steamy romance interwoven with thrilling action sequences that didn't entirely deliver on its promise."
+      }
+    ],
+    "dominant_taste": "Thriller with a touch of Mystery and Romance.",
+    "expected_recommendations": "Books with strong narrative twists and engaging character dynamics in Thriller and Mystery genres.",
+    "edge_case_tested": "This archetype tests how contradictory ratings within the same genre impact collaborative filtering recommendations."
+  }
+}
