@@ -78,33 +78,50 @@ Built as part of NUS BT4221 (Big Data Techniques and Technologies).
 ---
 
 ## 🏗️ Pipeline Architecture
-Raw Kindle Data (982K rows)
-│
-▼
-Phase 1: PySpark Data Ingestion & Pruning
-→ Structural pruning
-→ K-Core bipartite filter (Item >50, User ≥10)
-→ Dense matrix (102K rows, 0.70% density)
-│
-▼
-Phase 2: Agentic Feature Engineering (LangGraph)
-→ Validator Node (LLM Gatekeeper)
-→ Extractor Node (Tropes + Genres via GPT-4o)
-→ Pydantic schema enforcement
-│
-▼
-Phase 3: Vectorisation (Spark ML)
-→ Genre CountVectorizer (596-D)
-→ Trope TF-IDF (512-D)
-→ Trope Word2Vec (512-D)
-→ Feature fusion (1,108-D)
-│
-▼
-Phase 4: Modelling & Autonomous Tuning
-→ Temporal train-test split (80/20 chronological)
-→ Hybrid Recommender (Content + CF + Pop Boost)
-→ LangGraph orchestrator auto-tunes weights
-→ Evaluation: Recall@K, NDCG@K
+Here's a clean ASCII version you can paste directly into your README:
+
+```
+## 🏗️ Pipeline Architecture
+
+```
+┌─────────────────────────────────────────┐
+│         Raw Kindle Data (982K rows)     │
+└──────────────────┬──────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────┐
+│   Phase 1: Data Ingestion & Pruning     │
+│   ├── Structural pruning                │
+│   ├── K-Core filter (Item >50, User ≥10)│
+│   └── Dense matrix (102K rows, 0.70%)   │
+└──────────────────┬──────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────┐
+│   Phase 2: Agentic Feature Engineering  │
+│   ├── Validator Node (LLM Gatekeeper)   │
+│   ├── Extractor Node (GPT-4o)           │
+│   └── Pydantic schema enforcement       │
+└──────────────────┬──────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────┐
+│   Phase 3: Vectorisation (Spark ML)     │
+│   ├── Genre CountVectorizer  (596-D)    │
+│   ├── Trope TF-IDF           (512-D)    │
+│   ├── Trope Word2Vec         (512-D)    │
+│   └── Feature fusion        (1,108-D)   │
+└──────────────────┬──────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────┐
+│   Phase 4: Modelling & Auto-Tuning      │
+│   ├── Chronological split (80/20)       │
+│   ├── Hybrid Recommender (CF + Content) │
+│   ├── LangGraph auto-tunes weights      │
+│   └── Evaluation: Recall@K, NDCG@K     │
+└─────────────────────────────────────────┘
+```
 
 ---
 
@@ -117,6 +134,58 @@ Phase 4: Modelling & Autonomous Tuning
 - Post-filtering: 102,784 interactions, 5,174 users, 2,836 books
 
 ---
+
+```md
+## 🚀 Setup
+
+Requires Python 3.10+ and Java (for PySpark).
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Set your OpenAI API key:
+
+```bash
+export OPENAI_API_KEY=your_key_here
+```
+
+Download the [UCSD Amazon Kindle 5-core dataset](https://www.kaggle.com/datasets/bharadwaj6/kindle-reviews)
+and place it at:
+
+```
+data/raw/kindle_reviews.csv
+```
+
+---
+
+## ▶️ Running
+
+Run the full pipeline:
+
+```bash
+python scripts/run_all.py
+```
+
+Or run stages individually:
+
+```bash
+python scripts/run_preprocessing.py   # clean + filter
+python scripts/generate_features.py   # LLM enrichment + vectorisation
+python scripts/train_models.py        # train + evaluate
+```
+
+To skip a stage and reuse existing artifacts:
+
+```bash
+python scripts/run_all.py --skip-preprocessing
+python scripts/run_all.py --skip-features
+python scripts/run_all.py --skip-training
+```
+```
 
 ## 👥 Team (NUS BT4221)
 
